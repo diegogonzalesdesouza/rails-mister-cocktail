@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Cocktails</h1>
+  <% @cocktails.each do |cocktail| %>
+    <%= link_to cocktail do %>
+      <div class="card col-sm-4">
+        <div class="card-img">
+          <%= image_tag("https://source.unsplash.com/random/", width: '100%') %>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title"><%= cocktail.name %></h3>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

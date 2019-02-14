@@ -1,0 +1,11 @@
+<div class="navbar-wagon">
+  <%= link_to cocktails_path do %>
+    <div class="navbar-wagon-brand">
+      <%= image_tag('logo.png') %>
+    </div>
+  <% end %>
+  <div class="avatar" style="background-image: url('');"></div>
+  <div class="navbar-wagon-right">
+    <%= link_to "New cocktail", new_cocktail_path, class: "fl btn btn-success" %>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Cocktail #<%= @cocktail.id %></h1>
+    <div class="card col-sm-10 offset-sm-1">
+      <div class="card-img">
+        <%= image_tag("https://source.unsplash.com/random/", width: '100%') %>
+      </div>
+      <div class="card-body">
+        <h2 class="card-title"><%= @cocktail.name %></h2>
+      </div>
+    </div>
+</div>

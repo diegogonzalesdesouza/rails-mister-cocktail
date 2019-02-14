@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>How to make a  <strong><%= @cocktail.name %></strong></h1>
+  <%= link_to "Add dose", new_cocktail_dose_path, class: "fl btn btn-success" %>
+  <% @doses.each do |dose| %>
+    <div class="card col-sm-10 offset-sm-1">
+      <li class="card-body">
+        <h3 class="card-title"><%= dose.description %> of <%= dose.ingredient.name %></h3>
+      </li>
+    </div>
+  <% end %>
+</div>
