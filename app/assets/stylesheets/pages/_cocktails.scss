@@ -1,0 +1,37 @@
+// Place all the styles related to the Cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.my-card {
+  background-color: #fff;
+  margin-bottom: 2vh;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px #bababa;
+  position: relative;
+}
+
+.my-card:hover {
+  box-shadow: 2px 2px 4px lightgray;
+  -webkit-transition-timing-function: ease;
+  -webkit-transition-duration: 250ms;
+  -moz-transition-timing-function: ease;
+  -moz-transition-duration: 250ms;
+}
+
+.my-card img {
+  image-rendering: optimizespeed;
+  border-radius: 6px 6px 0 0;
+}
+
+.my-card h3 {
+  display: block;
+  width: 100%;
+  padding: 2vh;
+  margin: 0 !important;
+  color: #000000b3;
+}
+
+.card-body {
+  justify: center;
+  text-align: center;
+}

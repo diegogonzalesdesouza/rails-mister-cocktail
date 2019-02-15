@@ -1,0 +1,26 @@
+// Place all the styles related to the Doses controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container > h3 {
+  margin-top: 12.5px;
+}
+
+.btn-delete-dose {
+  text-decoration: none !important;
+  color: #999;
+}
+
+.btn-delete-dose:hover {
+  color: rgba(0,0,0,0.5)
+}
+
+.btn-delete-dose:before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f2ed";
+}

@@ -1,11 +1,16 @@
 <div class="container">
-  <h1>How to make a  <strong><%= @cocktail.name %></strong></h1>
-  <%= link_to "Add dose", new_cocktail_dose_path, class: "fl btn btn-success" %>
-  <% @doses.each do |dose| %>
-    <div class="card col-sm-10 offset-sm-1">
-      <li class="card-body">
-        <h3 class="card-title"><%= dose.description %> of <%= dose.ingredient.name %></h3>
+  <div class="flex-container">
+    <h2>How to make a  <strong><%= @cocktail.name %></strong></h2>
+    <%= link_to "+ Add dose", new_cocktail_dose_path, class: "fl btn btn-danger" %>
+  </div>
+  <ul class="list-group col-sm-10 offset-sm-1">
+    <% @doses.each do |dose| %>
+      <li class="list-group-item">
+        <div class="flex-container">
+          <h3 class="card-title"><%= dose.description %> of <%= dose.ingredient.name %></h3>
+          <%= link_to "", cocktail_dose_path(@cocktail, dose.id), method: :delete, data: { confirm: "Are you sure?"}, class: "btn-delete-dose" %>
+        </div>
       </li>
-    </div>
-  <% end %>
+    <% end %>
+  </ul>
 </div>

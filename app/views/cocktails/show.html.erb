@@ -1,11 +1,15 @@
 <div class="container">
-  <h1>Cocktail #<%= @cocktail.id %></h1>
-    <div class="card col-sm-10 offset-sm-1">
-      <div class="card-img">
-        <%= image_tag("https://source.unsplash.com/random/", width: '100%') %>
-      </div>
-      <div class="card-body">
-        <h2 class="card-title"><%= @cocktail.name %></h2>
-      </div>
+  <div class="flex-container">
+    <h2 class="card-title"><%= @cocktail.name %></h2>
+    <div class="flex-container">
+      <%= link_to "View doses", cocktail_doses_path(@cocktail), class: "btn btn-primary" %>
+      <%= link_to "Add new dose", new_cocktail_dose_path(@cocktail), class: "btn btn-warning",  style: "margin-left: 1vw;" %>
+      <%= link_to "Home", cocktails_path, class: "btn btn-danger", style: "margin-left: 1vw;" %>
     </div>
+  </div>
+  <div class="card col-sm-10 offset-sm-1">
+    <%= image_tag("https://meudrink.com.br/media/uploads/2017/02/meudrink-crossbow-450x594.png",class: "pseudo-banner") %>
+    <div class="card-body">
+    </div>
+  </div>
 </div>
