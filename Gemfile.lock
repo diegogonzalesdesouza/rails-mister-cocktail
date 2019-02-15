@@ -242,7 +242,6 @@ DEPENDENCIES
   autoprefixer-rails
   bootsnap (>= 1.1.0)
   bootstrap-sass (~> 3.3.7)
-  bundler (~> 2.0.1)
   byebug
   coffee-rails (~> 4.2)
   font-awesome-sass (~> 5.0.9)
