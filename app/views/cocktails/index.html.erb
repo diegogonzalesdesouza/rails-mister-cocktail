@@ -1,7 +1,14 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container text-center">
+    <h1 class="card-title">Dam, this is a cocktail index page</h1>
+    <p>Changing the world, one drink at a time.</p>
+  </div>
+</div>
+
 <div class="container">
   <% @cocktails.each do |cocktail| %>
     <%= link_to cocktail do %>
-      <div class="col-sm-4" >
+      <div class="col-xm-12 col-sm-6 col-md-4" >
         <div class="card my-card">
           <div class="card-img">
             <%= image_tag("https://source.unsplash.com/random/", width: '100%') %>

@@ -1,15 +1,14 @@
-<div class="container">
-  <div class="flex-container">
-    <h2 class="card-title"><%= @cocktail.name %></h2>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container">
     <div class="flex-container">
+      <h1 class="card-title"><%= @cocktail.name %></h1>
+    </div>
+    <p>Change your life and learn to code at one of our campuses around the world.</p>
       <%= link_to "View doses", cocktail_doses_path(@cocktail), class: "btn btn-primary" %>
       <%= link_to "Add new dose", new_cocktail_dose_path(@cocktail), class: "btn btn-warning",  style: "margin-left: 1vw;" %>
       <%= link_to "Home", cocktails_path, class: "btn btn-danger", style: "margin-left: 1vw;" %>
-    </div>
   </div>
-  <div class="card col-sm-10 offset-sm-1">
-    <%= image_tag("https://meudrink.com.br/media/uploads/2017/02/meudrink-crossbow-450x594.png",class: "pseudo-banner") %>
-    <div class="card-body">
-    </div>
-  </div>
+</div>
+<div class="container">
+  Cocktail description goes here!
 </div>
